@@ -6,6 +6,7 @@ const userDataRoutes = express.Router();
 
 userDataRoutes.route('/add').post(userDataCtrl.createProduct);
 userDataRoutes.route('/get/').get(userDataCtrl.getProduct);
+userDataRoutes.route('/get/:id').get(userDataCtrl.getProductById);
 userDataRoutes.route('/update/:id').post(userDataCtrl.updateProduct);
 
 module.exports = userDataRoutes;

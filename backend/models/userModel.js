@@ -11,6 +11,7 @@ const userData = mongoose.Schema({
             productName: String,
             productType: String,
             description: String,
+            imgUrl: String,
             price: Number,
             rating: Number,
             impression: Number
@@ -22,6 +23,7 @@ const userData = mongoose.Schema({
 
             productName: String,
             description: String,
+            imgUrl: String,
             price: Number,
             rating: Number,
             impression: Number

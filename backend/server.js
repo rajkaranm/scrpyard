@@ -2,10 +2,14 @@ const express = require("express");
 const app = express();
 const cors = require("cors");
 require("dotenv").config({ path: "./.env" });
+const fileUpload = require("express-fileupload")
 
 
 const port = process.env.PORT || 5000;
+
+// middlewares
 app.use(cors());
+app.use(express.urlencoded({extended: true}))
 app.use(express.json());
 
 // get driver connection
