@@ -13,7 +13,7 @@ export default function CreateProductForm() {
 
     useEffect(() => {
         async function fetchData() {
-            const req = await axios.get("http://localhost:5000/product/get/63327656af0b98f10f78c2d9");
+            const req = await axios.get("http://localhost:5000/product/get/63368fc215109e4842819487");
 
             setData(req.data);
         }
@@ -38,8 +38,12 @@ export default function CreateProductForm() {
             })
             setData(data);
             console.log(data);
-            axios.post("http://localhost:5000/product/update/63327656af0b98f10f78c2d9", data);
+            axios.post("http://localhost:5000/product/update/63368fc215109e4842819487", data)
+            .then((res) => {
+                alert("Product Added");
+            })
         })
+        // window.location.reload(false);
     }
 
 
