@@ -21,15 +21,11 @@ export default function Navbar() {
                                         <a href="#" class="dropdown-item">Baby's Dresses</a>
                                     </div>
                                 </div>
-                                <a href="#" class="nav-item nav-link">Shirts</a>
-                                <a href="#" class="nav-item nav-link">Jeans</a>
-                                <a href="#" class="nav-item nav-link">Swimwear</a>
-                                <a href="#" class="nav-item nav-link">Sleepwear</a>
-                                <a href="#" class="nav-item nav-link">Sportswear</a>
-                                <a href="#" class="nav-item nav-link">Jumpsuits</a>
-                                <a href="#" class="nav-item nav-link">Blazers</a>
-                                <a href="#" class="nav-item nav-link">Jackets</a>
-                                <a href="#" class="nav-item nav-link">Shoes</a>
+                                <a href="#" class="nav-item nav-link">Jewelleries</a>
+                                <a href="#" class="nav-item nav-link">Electronics</a>
+                                <a href="#" class="nav-item nav-link">Metals</a>
+                                <a href="#" class="nav-item nav-link">DIY Products</a>
+                              
                             </div>
                         </nav>
                     </div>
@@ -47,13 +43,13 @@ export default function Navbar() {
                                     <a href="shop.html" class="nav-item nav-link">Shop</a>
                                     <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
                                     <div class="nav-item dropdown">
-                                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                 
                                         <div class="dropdown-menu rounded-0 m-0">
                                             <a href="cart.html" class="dropdown-item">Shopping Cart</a>
-                                            <a href="checkout.html" class="dropdown-item">Checkout</a>
+                                    
                                         </div>
                                     </div>
-                                    <a href="contact.html" class="nav-item nav-link">Contact</a>
+                                   
                                 </div>
                                 <div class="navbar-nav ml-auto py-0">
                                     <a href="#" class="nav-item nav-link">Login</a>
@@ -64,11 +60,11 @@ export default function Navbar() {
                         <div id="header-carousel" class="carousel slide" data-ride="carousel">
                             <div class="carousel-inner">
                                 <div class="carousel-item active" style={{height: "410px"}}>
-                                    <img class="img-fluid" src="/img/carousel-1.jpg" />
+                                    <img class="img-fluid" src="/img/carausel-1.png" />
                                         <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
                                             <div class="p-3" style={{maxWidth: "700px"}}>
                                                 <h4 class="text-light text-uppercase font-weight-medium mb-3">10% Off Your First Order</h4>
-                                                <h3 class="display-4 text-white font-weight-semi-bold mb-4">Fashionable Dress</h3>
+                                         
                                                 <a href="#" class="btn btn-light py-2 px-3">Shop Now</a>
                                             </div>
                                         </div>
