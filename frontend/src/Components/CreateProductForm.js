@@ -41,6 +41,7 @@ export default function CreateProductForm() {
             axios.post("http://localhost:5000/product/update/63368fc215109e4842819487", data)
             .then((res) => {
                 alert("Product Added");
+                window.location.reload(false);
             })
         })
         // window.location.reload(false);
