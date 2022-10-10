@@ -23,6 +23,7 @@ dbConnect(Db);
 
 // Routes
 app.use("/product", require("./routes/UserData.route"));
+app.use("/", require("./routes/auth.route"));
  
 app.listen(port, () => {
   console.log(`Server is running on port: ${port}`);

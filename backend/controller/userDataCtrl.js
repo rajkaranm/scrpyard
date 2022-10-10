@@ -43,7 +43,8 @@ const userDataCtrl = {
             else
                 res.json(data);
         })
-    }
+    },
+
 };
 
 module.exports = userDataCtrl;
