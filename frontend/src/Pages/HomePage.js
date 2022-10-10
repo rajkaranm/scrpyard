@@ -7,9 +7,11 @@ import OfferProduct from '../Components/OfferProduct'
 import Products from '../Components/Products'
 import Topbar from '../Components/Topbar'
 
+
 export default function HomePage() {
   return (
     <div>
+     
         <Topbar />
         <Navbar />
         <FeaturesSection />
