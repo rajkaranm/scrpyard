@@ -8,12 +8,13 @@ import Products from '../Components/Products'
 import Topbar from '../Components/Topbar'
 
 
-export default function HomePage() {
+export default function HomePage({user, setUser}) {
+
+
   return (
     <div>
-     
         <Topbar />
-        <Navbar />
+        <Navbar user={user} setUser={setUser} />
         <FeaturesSection />
         <CategoryProduct />
         <OfferProduct />

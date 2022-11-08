@@ -34,9 +34,12 @@ const userData = mongoose.Schema({
     cart: {
         products: [
             {
-                product_id: String,
+                imgUrl: String,
                 productName: String,
+                productType: String,
+                price: Number,
                 quantity: Number,
+                _id: String
             },
         ],
         totalProducts: Number
