@@ -1,8 +1,15 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 
 export default function Topbar() {
-    const navigate = useNavigate()
+    const navigate = useNavigate();
+
+    const [search, setSearch] = useState("");
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        navigate("/search", {state: {search}})
+    }
     return (
         <div>
             {/* <!-- Topbar Start --> */}
@@ -44,16 +51,16 @@ export default function Topbar() {
                         </a>
                     </div>
                     <div className="col-lg-6 col-6 text-left">
-                        <form action="">
                             <div className="input-group">
-                                <input type="text" className="form-control" placeholder="Search for products" />
+                                <input value={search} onChange={(e) => setSearch(e.target.value)} type="text" className="form-control" placeholder="Search for products" />
                                 <div className="input-  group-append">
                                     <span className="input-group-text bg-transparent text-primary">
-                                        <i className="fa fa-search"></i>
+                                        <button onClick={(e) => handleSubmit(e)} style={{"width": "30px", "height": "25px", "display": "flex", "justifyContent": "center", "alignItems": "center"}} className='btn'>
+                                            <i className="fa fa-search"></i>
+                                        </button>
                                     </span>
                                 </div>
                             </div>
-                        </form>
                     </div>
                     <div className="col-lg-3 col-6 text-right">
                         <a href="" className="btn border">

@@ -12,11 +12,11 @@ const userDataCtrl = {
         });
     },
     getProduct: async (req, res) => {
-        userModel.find(function(err, todos) {
+        userModel.find(function(err, data) {
             if (err) {
                 console.log(err);
             } else {
-                res.json(todos);
+                res.json(data);
             }
         });
     },

@@ -8,11 +8,11 @@ import Register from './Pages/Register';
 import axios from 'axios';
 import ProductPage from './Pages/ProductPage';
 import Cart from './Pages/Cart';
+import Search from './Pages/Search';
 
 
 function App() {
   const [user, setUser] = useState("");
-
 
 
   useEffect(() => {
@@ -38,6 +38,7 @@ function App() {
           <Route path="/register" element={<Register />}></Route>
           <Route path="/product/id/:id" element={<ProductPage user={user} setUser={setUser} />} />
           <Route path="/cart" element={<Cart user={user} setUser={setUser}/>} />
+          <Route path="/search" element={<Search />} />
 
         </Routes>
       </BrowserRouter>
