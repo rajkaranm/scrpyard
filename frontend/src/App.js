@@ -9,6 +9,7 @@ import axios from 'axios';
 import ProductPage from './Pages/ProductPage';
 import Cart from './Pages/Cart';
 import Search from './Pages/Search';
+import Chat from './Components/ChatBot';
 
 
 function App() {
@@ -39,6 +40,8 @@ function App() {
           <Route path="/product/id/:id" element={<ProductPage user={user} setUser={setUser} />} />
           <Route path="/cart" element={<Cart user={user} setUser={setUser}/>} />
           <Route path="/search" element={<Search />} />
+          
+
 
         </Routes>
       </BrowserRouter>
