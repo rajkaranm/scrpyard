@@ -26,9 +26,14 @@ export default function Cart({ user, setUser }) {
   };
 
   const handleSubmit = async () => {
-    const {data:{key}} = await axios.get("http://127.0.0.1:5000/getRazorKey");
+    prompt("Enter Your Address!");
+    const {
+      data: { key },
+    } = await axios.get("http://127.0.0.1:5000/getRazorKey");
     total = total + 100;
-    const {data:{order}} = await axios.post("http://127.0.0.1:5000/checkout", {total})
+    const {
+      data: { order },
+    } = await axios.post("http://127.0.0.1:5000/checkout", { total });
     var options = {
       key: key, // Enter the Key ID generated from the Dashboard
       amount: order.amount, // Amount is in currency subunits. Default currency is INR. Hence, 50000 refers to 50000 paise
